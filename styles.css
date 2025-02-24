@@ -1,0 +1,119 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+/* Background Styling */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  animation: backgroundFade 5s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes backgroundFade {
+  0% { background: linear-gradient(135deg, #a8edea, #fed6e3); }
+  25% { background: linear-gradient(135deg, #fabbeb, #fce3f6); }
+  50% { background: linear-gradient(135deg, #fa84ea, #84a2fa); }
+  100% { background: linear-gradient(135deg, #00a1ff, #00ff8f); }
+}
+
+/* Login Container */
+.login-container {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 300px;
+}
+
+/* Login Heading */
+.login-container h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.login-container p {
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #ffcccb;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Login Button */
+#login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #84fab0;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#login-button:hover {
+  background-color: #8fd3f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
