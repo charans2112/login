@@ -27,6 +27,7 @@ body {
   0% { background: linear-gradient(135deg, #a8edea, #fed6e3); }
   25% { background: linear-gradient(135deg, #fabbeb, #fce3f6); }
   50% { background: linear-gradient(135deg, #fa84ea, #84a2fa); }
+  75% { background: linear-gradient(135deg, #66eefa, #ffffff); }
   100% { background: linear-gradient(135deg, #00a1ff, #00ff8f); }
 }
 
